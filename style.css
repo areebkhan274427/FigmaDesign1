@@ -326,6 +326,7 @@ body{
         position: sticky;
         top:0;
         z-index: 1;
+        border-bottom: 1px solid rgb(210, 208, 208);
     }
 
     .logo-container{
@@ -339,15 +340,19 @@ body{
         width: auto;
         height: auto;
         gap: 5px;
-        justify-content: center;
+        justify-content: space-around;
         margin: 15px;
+        align-items: center;
     }
 
 
     .links a{
-        font-size: 13px;
+        font-size: 14px;
         flex-wrap: row wrap;
         width: 100px;
+        height: auto;
+        margin-top: 10px;
+        
     }  
 
     .head{
@@ -409,6 +414,11 @@ body{
         width:100px;
     }
 
+    .links a span{
+        margin-left: 5px;
+        margin-right: 2px;
+    }
+
 
     
     .card-container{
@@ -417,6 +427,18 @@ body{
         align-items: center;
     }
 
+    @media (orientation:portrait) {
+        .links a:hover{
+       
+            background-color:#5B68FF;
+            border-radius: 5px;
+            width: auto;
+            height: 25px;
+            color: white;
+            
+        }
+        
+    }
 
 
 }
